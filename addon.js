@@ -1,6 +1,6 @@
 const { addonBuilder } = require("stremio-addon-sdk");
 
-const host = process.env.VERCEL_URL || 'https://vidsrc-stremio-addon-puce.vercel.app:3000';
+const host = process.env.VERCEL_URL || 'http://127.0.0.1:3000';
 const iconUrl = host.startsWith('http') ? `${host}/icon.png` : `https://${host}/icon.png`;
 
 const manifest = {
